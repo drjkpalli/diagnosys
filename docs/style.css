@@ -1755,7 +1755,7 @@ body.dark .nav-overlay {
 .nav-overlay-content a {
     color: var(--nav-items);
     font-size: 4vh;
-    margin: 15px 0;
+    margin: 20px 0;
     text-decoration: none;
 }
 
@@ -1763,8 +1763,8 @@ body.dark .nav-overlay {
     position: absolute;
     top: 16px;
     right: 16px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
