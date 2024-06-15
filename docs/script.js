@@ -4,7 +4,7 @@ const sideContent = document.querySelector(".side-content");
 const modeSwitch = body.querySelector(".mode-button");
 const mainContent = document.querySelector(".main-content");
 const navLinks = document.querySelectorAll(".nav-links a");
-const backend = "http://localhost:8000/";
+const backend = "https://public-sloths-raise.loca.lt/";
 let activeItem = null;
 let activeSection = null;
 
