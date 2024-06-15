@@ -994,3 +994,19 @@ span.onclick = function () {
 // };
 
 // Experimental code here
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerMenu = document.querySelector(".hamburger-menu");
+  const navOverlay = document.querySelector(".nav-overlay");
+  const navLinks = document.querySelectorAll(".nav-overlay-content a");
+
+  hamburgerMenu.addEventListener("click", function () {
+    navOverlay.style.display =
+      navOverlay.style.display === "block" ? "none" : "block";
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      navOverlay.style.display = "none";
+    });
+  });
+});

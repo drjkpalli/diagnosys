@@ -1699,3 +1699,59 @@ body.dark #submitPopup:hover {
 .checkmark-circle.animate .checkmark {
     animation: checkmark 0.8s ease-in-out 1s forwards;
 }
+
+/* Experiment */
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--nav-items);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.nav-overlay {
+    position: fixed;
+    top: 6px;
+    left: 6px;
+    bottom: 6px;
+    right: 6px;
+    width: auto;
+    height: auto;
+    display: none;
+    overflow: auto;
+    border-radius: 15px;
+    background-color: rgba(124, 124, 124, 0.3);
+    backdrop-filter: blur(35px);
+    z-index: 4;
+}
+
+.nav-overlay-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-overlay-content a {
+    color: white;
+    font-size: 24px;
+    margin: 15px 0;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1030px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
