@@ -1538,7 +1538,7 @@ body.dark .popup-content {
     flex-grow: 1;
 }
 
-.close-button {
+#close-button {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -1554,7 +1554,7 @@ body.dark .popup-content {
     cursor: pointer;
 }
 
-.close-button:hover {
+#close-button:hover {
     background-color: rgb(218, 0, 0);
     color: var(--button-text);
 }
@@ -1728,7 +1728,12 @@ body.dark #submitPopup:hover {
     border-radius: 15px;
     background-color: rgba(124, 124, 124, 0.3);
     backdrop-filter: blur(35px);
-    z-index: 4;
+    z-index: 3;
+}
+
+body.dark .nav-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(35px);
 }
 
 .nav-overlay-content {
@@ -1740,10 +1745,31 @@ body.dark #submitPopup:hover {
 }
 
 .nav-overlay-content a {
-    color: white;
+    color: var(--nav-items);
     font-size: 24px;
     margin: 15px 0;
     text-decoration: none;
+}
+
+#close-hamburger-menu {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--button-background); */
+    color: var(--main-content-p);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#close-hamburger-menu:hover {
+    background-color: rgb(218, 0, 0);
+    color: var(--button-text);
 }
 
 @media screen and (max-width: 1030px) {

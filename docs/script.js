@@ -965,7 +965,7 @@ function renderItemDetails(data) {
 // Open / close popup window
 var popupWindow = document.getElementById("popupWindow");
 var btn = document.getElementById("complete-cc");
-var span = document.getElementsByClassName("close-button")[0];
+var span = document.getElementById("close-button");
 
 // Add single event listener for animation end
 popupWindow.addEventListener("animationend", function () {
@@ -997,15 +997,27 @@ span.onclick = function () {
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.querySelector(".hamburger-menu");
   const navOverlay = document.querySelector(".nav-overlay");
-  const navLinks = document.querySelectorAll(".nav-overlay-content a");
+  const navMenuLinks = document.querySelectorAll(".nav-overlay-content a");
+  const closeNavMenu = document.getElementById("close-hamburger-menu");
 
   hamburgerMenu.addEventListener("click", function () {
     navOverlay.style.display =
       navOverlay.style.display === "block" ? "none" : "block";
   });
 
-  navLinks.forEach((link) => {
-    link.addEventListener("click", function () {
+  closeNavMenu.addEventListener("click", function () {
+    navOverlay.style.display = "none";
+  });
+
+  navMenuLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const targetSectionId = link.getAttribute("href").substring(1);
+      showMainSection(targetSectionId);
+
+      // Update active link class
+      navLinks.forEach((link) => link.classList.remove("active"));
+      link.classList.add("active");
       navOverlay.style.display = "none";
     });
   });
