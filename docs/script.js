@@ -4,6 +4,7 @@ const sideContent = document.querySelector(".side-content");
 const modeSwitch = body.querySelector(".mode-button");
 const mainContent = document.querySelector(".main-content");
 const navLinks = document.querySelectorAll(".nav-links a");
+const backend = "http://localhost:8000/";
 let activeItem = null;
 let activeSection = null;
 
@@ -405,7 +406,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Populate questions and update progress bar for the first section on initial page load
-  renderQuestions("http://localhost:8000/cc", "questions-container1");
+  renderQuestions(backend + "cc", "questions-container1");
   showSection(0);
   updateProgressBar();
 
@@ -415,7 +416,7 @@ document.addEventListener("DOMContentLoaded", () => {
       0,
       "section1",
       "questions-container2",
-      "http://localhost:8000/ac"
+      backend + "ac"
     );
   });
 
@@ -424,7 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
       1,
       "section2",
       "questions-container3",
-      "http://localhost:8000/questions"
+      backend + "questions"
     );
   });
 
@@ -738,7 +739,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   // Function to fetch items and update the dropdown
   async function fetchAndPopulateDropdown() {
     try {
-      const response = await fetch("http://localhost:8000/conditions");
+      const response = await fetch(backend + "conditions");
 
       if (!response.ok) {
         throw new Error("Network response was not ok " + response.statusText);
@@ -786,7 +787,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 async function fetchAndDisplayItemDetails(name) {
   try {
-    const response = await fetch(`http://localhost:8000/${name}`);
+    const response = await fetch(backend + `${name}`);
 
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
