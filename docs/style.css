@@ -156,6 +156,7 @@ nav {
     padding: 6.5px 20px 6.5px 12px;
     font-family: "Poppins", sans-serif;
     backdrop-filter: var(--backdrop-filter);
+    -webkit-backdrop-filter: var(--backdrop-filter);
     box-shadow: var(--box-shadow);
     z-index: 2;
 }
@@ -221,6 +222,7 @@ aside {
     border-radius: 15px;
     background-color: var(--blur-background);
     backdrop-filter: var(--backdrop-filter);
+    -webkit-backdrop-filter: var(--backdrop-filter);
     box-shadow: var(--box-shadow);
     /* border: var(--box-border); */
     display: flex;
@@ -426,6 +428,7 @@ body.dark .switch::after {
     box-sizing: border-box;
     font-family: Georgia, "Poppins", sans-serif;
     backdrop-filter: var(--backdrop-filter);
+    -webkit-backdrop-filter: var(--backdrop-filter);
     box-shadow: var(--box-shadow);
 }
 
@@ -547,6 +550,7 @@ body.dark .side-card {
     box-sizing: border-box;
     font-family: Georgia, "Poppins", sans-serif;
     backdrop-filter: var(--backdrop-filter);
+    -webkit-backdrop-filter: var(--backdrop-filter);
     box-shadow: var(--box-shadow);
     transition: var(--main-content-shrink-animation);
 }
@@ -1494,6 +1498,7 @@ body.dark .section-title {
     border-radius: 15px;
     background-color: rgba(124, 124, 124, 0.3);
     backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
 }
 
 .popup-window.active {
@@ -1503,6 +1508,7 @@ body.dark .section-title {
 body.dark .popup-window {
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
 }
 
 .popup-content {
@@ -1728,12 +1734,14 @@ body.dark #submitPopup:hover {
     border-radius: 15px;
     background-color: rgba(124, 124, 124, 0.3);
     backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
     z-index: 3;
 }
 
 body.dark .nav-overlay {
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
 }
 
 .nav-overlay-content {
