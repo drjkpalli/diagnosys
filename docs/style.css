@@ -1739,7 +1739,7 @@ body.dark #submitPopup:hover {
 }
 
 body.dark .nav-overlay {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(35px);
     -webkit-backdrop-filter: blur(35px);
 }
