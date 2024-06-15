@@ -1771,7 +1771,7 @@ body.dark .nav-overlay {
     align-items: center;
     /* background-color: var(--button-background); */
     color: var(--main-content-p);
-    font-size: 25px;
+    font-size: 35px;
     cursor: pointer;
 }
 
