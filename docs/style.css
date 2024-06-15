@@ -1739,7 +1739,7 @@ body.dark #submitPopup:hover {
 }
 
 body.dark .nav-overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(35px);
     -webkit-backdrop-filter: blur(35px);
 }
@@ -1754,7 +1754,7 @@ body.dark .nav-overlay {
 
 .nav-overlay-content a {
     color: var(--nav-items);
-    font-size: 24px;
+    font-size: 4vh;
     margin: 15px 0;
     text-decoration: none;
 }
