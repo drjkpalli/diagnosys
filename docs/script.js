@@ -963,9 +963,9 @@ function renderItemDetails(data) {
 }
 
 // Open / close popup window
-var popupWindow = document.getElementById("popupWindow");
-var btn = document.getElementById("complete-cc");
-var span = document.getElementById("close-button");
+const popupWindow = document.getElementById("popupWindow");
+// const btn = document.getElementById("complete-cc");
+const span = document.getElementById("close-button");
 
 // Add single event listener for animation end
 popupWindow.addEventListener("animationend", function () {
@@ -993,7 +993,7 @@ span.onclick = function () {
 //   }
 // };
 
-// Experimental code here
+// Open / close Nav Overlay menu on smaller screens
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.querySelector(".hamburger-menu");
   const navOverlay = document.querySelector(".nav-overlay");
