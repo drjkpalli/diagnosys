@@ -165,5 +165,6 @@ body.dark .token.property {
 
 body.dark .token.string {
     color: #00ff00;
+    margin-left: 2em;
     /* Change value color */
 }
