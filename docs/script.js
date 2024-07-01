@@ -425,7 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
       1,
       "section2",
       "questions-container3",
-      backend + "questions"
+      backend + "history"
     );
   });
 
@@ -434,7 +434,7 @@ document.addEventListener("DOMContentLoaded", () => {
       2,
       "section3",
       "questions-container4",
-      "http://localhost:8000/questions"
+      backend + "physical"
     );
   });
 
@@ -443,7 +443,7 @@ document.addEventListener("DOMContentLoaded", () => {
       3,
       "section4",
       "questions-container5",
-      "http://localhost:8000/questions"
+      backend + "labs"
     );
   });
 
@@ -452,7 +452,7 @@ document.addEventListener("DOMContentLoaded", () => {
       4,
       "section5",
       "questions-container6",
-      "http://localhost:8000/questions"
+      backend + "imaging"
     );
   });
 
@@ -461,7 +461,7 @@ document.addEventListener("DOMContentLoaded", () => {
       5,
       "section6",
       "questions-container7",
-      "http://localhost:8000/questions"
+      backend + "diagnosis"
     );
   });
 
@@ -470,7 +470,7 @@ document.addEventListener("DOMContentLoaded", () => {
       6,
       "section7",
       "questions-container8",
-      "http://localhost:8000/questions"
+      backend + "treatment"
     );
   });
 
@@ -479,7 +479,7 @@ document.addEventListener("DOMContentLoaded", () => {
       7,
       "section8",
       "questions-container9",
-      "http://localhost:8000/questions",
+      "http://localhost:8000",
       true
     );
   });
