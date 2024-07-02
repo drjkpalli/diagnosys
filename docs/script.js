@@ -4,7 +4,7 @@ const sideContent = document.querySelector(".side-content");
 const modeSwitch = body.querySelector(".mode-button");
 const mainContent = document.querySelector(".main-content");
 const navLinks = document.querySelectorAll(".nav-links a");
-const backend = "https://inch-losses-organ-desktop.trycloudflare.com/";
+const backend = "https://dual-particular-finding-farmer.trycloudflare.com/";
 let activeItem = null;
 let activeSection = null;
 
